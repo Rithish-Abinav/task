@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0 !important;
+}
+:root{
+    --orange:#EC822F
+}
+
+.top-section{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #6F2F11  ;
+    color: white;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.top-section p{
+    font-size: 12px !important;
+}
+/* header */
+header{
+    background-color: var(--orange);
+    padding: 10px 100px;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ header div .logo{
+    font-weight: bold;
+    color: white;
+    font-size: 29px !important;
+ }
+
+ header div .search{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+ }
+ header div .search input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+ }
+ header div .search input:focus{
+    outline: none;
+ }
+ header div .search i{
+    padding: 0 10px;
+ }
+ header nav{
+    margin-top: 20px;
+ }
+ header nav, header nav ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-between;
+    color: white;
+ }
+ header nav ul li:not(header nav ul li:first-child){
+    margin-left: 25px;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    /* header */
+
+    /* banner carousal */
+    .carousel-indicators button{
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 50%;
+        background-color: transparent !important;
+        border: solid gray 1px !important;
+        margin: 0 10px !important;
+    }
+
+    .carousel-indicators .active{
+        background-color: gray !important;
+    }
+        /* banner carousal */
+main{
+    width: 90%;
+    margin: auto;
+}
+/* catoegories */
+.categories{
+    padding: 15px 0;
+}
+.categories h4{
+    text-align: center;
+    font-weight: bold;
+}
+.category-labels{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+padding: 0 200px;
+}
+.category-labels .label{
+    width: 80px;
+    margin: 20px;
+    position: relative;
+cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+.category-labels .label:hover span svg path{
+fill: var(--orange);
+}
+.category-labels .label:hover span{
+    border: solid var(--orange) 1px;
+    scale: 1.05;
+    transition: 0.5s all;
+
+}
+.category-labels .label:hover p{
+    color: var(--orange);
+scale: 1.05;    transition: 0.5s all;
+
+}
+.category-labels .label p{
+    font-size: 10px !important;
+    text-align: center;
+    margin-top: 10px;
+}
+.category-labels .label span {
+min-width: 60px;
+transform: rotate(90deg);
+display: flex;
+scale: 0.1;
+align-items: center;
+justify-content: center;
+min-height: 60px !important;
+border: solid #817E80 1px;
+border-radius: 100%;
+}
+.ad-banner{
+    height: 250px;
+position: relative;
+}
+.ad-banner img{
+    height: 100%;
+}
+.ad-content{
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    color: white;
+    max-width: 250px;
+}
+.ad-content p{
+    font-size: 16px !important;
+}
+.trending-offers{
+    margin-top: 20px;
+}
+.trending-offers .ad{
+    width: 20%;
+}
+.trending-offers .heading{
+    margin-left: 22%;
+    min-width: 78%;
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.trending-offers .heading h5{
+    color: var(--orange);
+    font-weight: bold;
+}
+.trending-offer-container{
+    display: flex;
+    margin-top: 20px;
+}
+.trending-offer-container .ad{
+    width: 20%;
+    position: relative;
+    transform: translateX(-500px) ;
+}
+
+
+.trending-offer-container .cards{
+    width: 80%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    overflow-x: hidden;
+    transition: 0.3s all;
+}
+.trending-offer-container .cards .card{
+    width: 20%;
+    margin:30px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateX(500px);
+}
+
+
+.trending-offer-container .cards .card .product-price span{
+   margin-left: 5px;
+   color: var(--orange);
+}
+.trending-offer-container .cards .card p{
+    margin-top: 5px;
+    opacity: 80%;
+}
+.product-name{
+    opacity: 1 !important;
+    font-weight: 600;
+}
+.product-rating{
+    margin-top: 10px;
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.product-rating i{
+    color: #FDCC0D    ;
+}
+.ad-2{
+    width: 20%;
+    display: flex;
+
+justify-content: center;    position: relative;
+    transform: translateX(500px) ;
+}
+.cards-2{
+    width: 80%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.product-type{
+    margin-top: 5px;
+}
+.cards-2 .cardd{
+    width: 20%;
+    margin:30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateX(-500px);
+}
+.cards .card {
+    position: relative;
+  }
+  
+  .cards .card img {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .ad-2 .ad-content{
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    font-weight: bold;
+  }
+ 
+  .multiple-banner{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .multiple-banner div{
+    width: 49%;
+    position: relative;
+    scale: 0.7;
+  }
+   .multiple-banner div:first-child{
+    width: 100%;
+   }
+   .multiple-banner .banner-content{
+    position: absolute;
+    color: white;
+    left: 30px;
+    top: 10%;
+   }
+   .multiple-banner .banner-content h1{
+    width: 150px;
+    font-size: 20px !important;
+   }
+   .top-brands{
+    margin-top: 30px;
+    padding: 0 200px;
+   }
+   .top-brands h4{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+   }
+   .brands{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+   }
+   .brands .brand-logo{
+scale: 0;
+position: relative;
+width: 100px;
+   }
+   .brand-logo img{
+    width: 100%;
+   }
+   .banner2{
+    margin: 30px 0;
+    position: relative;
+   }
+
+   /* footer */
+
+   footer{
+    background: var(--orange);
+    padding: 30px 200px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+   }
+   footer ul li{
+    color: white;
+    opacity: 70%;
+    font-size: 12px !important;
+cursor: pointer;
+   }
+    footer ul li:first-child{
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 14px !important;
+        opacity: 1 !important;
+    }
+     footer ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 12px !important;
+     }
+
+     .social-link h5{
+        font-weight: bold;
+        color: white;
+        margin-bottom: 15px;
+        font-size: 14px !important;
+     }
+     .social-icons{
+        margin: 15px 0 !important;
+        transform: none !important;
+     }
+     .social-icons i{
+        margin-right: 10px;
+        cursor: pointer;
+     }
+     .bottom-section{
+        background-color: #6F2F11;
+        padding: 5px 0;
+     }
+     .bottom-section p{
+margin: auto;
+        color: white;
+        cursor: pointer;
+        width: fit-content;
+        font-size: 12px !important;
+     }
